@@ -1,0 +1,16 @@
+package ca.ubc.cpsc210.sustainabilityapp.model.parser;
+
+import java.util.List;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+import ca.ubc.cpsc210.sustainabilityapp.model.PointOfInterest;
+
+public class MapInfoParser extends DefaultHandler {
+	
+	private List<PointOfInterest> reg;
+	
+	public MapInfoParser(List<PointOfInterest> reg) {
+		this.reg = reg;
+	}
+}
